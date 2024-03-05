@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        .nav
+		{
+			background-color:crimson;
+			color:white;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			width: 100%;
+			height: 100px;
+		}
+
+		.logo
+		{
+			padding:10px 10px;
+			letter-spacing:2px;
+			font-size:20;
+			cursor:pointer;
+		}
+
+		.headerTitle
+		{
+			padding:10px 10px;
+			letter-spacing:2px;
+			font-size:20;
+			cursor:pointer;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		.navlinks
+		{
+			float:right;
+			padding-right:30px;
+			cursor:pointer;
+		}
+
+		.navlinks ul li
+		{
+			display:inline-block;
+			padding-right:30px;
+			cursor:pointer;
+
+		}
+
+		.navlinks ul li a{
+			text-decoration:none;
+			color:white;
+			font-size:17;
+			cursor:pointer;
+			text-transform:uppercase;
+
+		}
+
+		.navborder::after
+		{
+			content:"";
+			width:0;
+			background-color:white;
+			height:2px;
+			display:block;
+			transition:width 0.3s ease;
+		}
+
+		.navborder:hover::after
+		{
+			width:100%;
+		}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.php" class="headerTitle"> <div class="logo"><h2>Student Skill and Performance Management System</h2></div></a>
+        <div class="navlinks">
+            <ul>
+                <li><a class="navborder" href="index.php">Home</a></li>
+                <li><a class="navborder" href="index.php#about">About</a></li>
+				<li><a class="navborder" href="button.php">Login</a></li>
+				<li><a class="navborder" href="button.php">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
